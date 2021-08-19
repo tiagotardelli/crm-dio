@@ -18,6 +18,10 @@ flake8==3.9.2 \
     --hash=sha256:07528381786f2a6237b061f6e96610a4167b226cb926e2aa2b6b1d78057c576b \
     --hash=sha256:bf8fd333346d844f616e8d47905ef3a3384edae6b4e9beb0c5101e25e3110907
     # via -r requirements-dev.in
+gunicorn==20.1.0 \
+    --hash=sha256:9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e \
+    --hash=sha256:e0a968b5ba15f8a328fdfd7ab1fcb5af4470c28aaf7e55df02a99bc13138e6e8
+    # via -r requirements.txt
 mccabe==0.6.1 \
     --hash=sha256:ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42 \
     --hash=sha256:dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f
@@ -42,3 +46,7 @@ sqlparse==0.4.1 \
     # via
     #   -r requirements.txt
     #   django
+
+# WARNING: The following packages were not pinned, but pip requires them to be
+# pinned when the requirements file includes hashes. Consider using the --allow-unsafe flag.
+# setuptools
