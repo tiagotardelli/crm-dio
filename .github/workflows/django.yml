@@ -20,5 +20,3 @@ jobs:
         run: pip install -r requirements-dev.txt
       - name: flake8
         run: flake8 .
-        with:
-          fall_ci_if_error: true
